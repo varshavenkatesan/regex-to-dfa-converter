@@ -15,53 +15,48 @@ This program was created as a solution for the "Special Assignment for Fast Lear
 
 ---
 ## How to Run
-
 ### **Requirements**
 * Python 3.x
 
 ### **Execution**
 No external libraries are needed. Simply save the code as a Python file (e.g., `converter.py`) and run it from your terminal:
-
-```bash
 python converter.py
 
 ### **Assignment Problems Solved**
 The script is designed to solve the specific problems outlined in the assignment.
 **Question 1**
-* **Task**: Write a program to convert a given regular expression into its equivalent DFA[cite: 1, 7].
-* **Input RE**: `(a/b)*abb` [cite: 1, 8]
-* **Output**: A formatted DFA transition table[cite: 1, 9].
+**Task:** Write a program to convert a given regular expression into its equivalent DFA.
+**Input RE:** (a/b)*abb 
+**Output:** A formatted DFA transition table.
 
 **Question 2**
-* **Task**: Write a program that converts the RE `(0|1)*01` into a DFA and validates a given set of strings[cite: 1, 10].
-* **Input RE**: `(0|1)*01` [cite: 1, 11]
-* **Strings to test**: `1101`, `111`, `0001` [cite: 1, 12]
-* [cite_start]**Output**: An "Accepted" / "Rejected" status for each string[cite: 1, 13].
+**Task:** Write a program that converts the RE (0|1)*01 into a DFA and validates a given set of strings.
+**Input RE:** (0|1)*01 
+**Strings to test:** 1101, 111, 0001 
+**Output:** An "Accepted" / "Rejected" status for each string.
 
----
-
-### Script Output
+### **Script Output**
 When executed, the script will produce the following output, solving both problems sequentially.
+**--- Solving Question 1 ---
+Input Regular Expression:** (a|b)*abb
 
-```text
-**--- Solving Question 1 ---**
-Input Regular Expression: (a/b)*abb
-**--- DFA Transition Table ---**
-State       |   a     |   b   
+--- DFA Transition Table ---
+State          |   a     |   b   
 -----------------------------
-->  q0      |   q1    |   q0    
-* q1        |   q1    |   q2    
-* q2        |   q1    |   q3    
-* q3        |   q1    |   q0    
+->  q0         |   q1    |   q0    
+* q1           |   q1    |   q2    
+* q2           |   q1    |   q3    
+* q3           |   q1    |   q0    
 
 (-> indicates start state, * indicates final state)
 
 ==================================================
 **--- Solving Question 2 ---**
-Input Regular Expression: (0|1)*01
-Strings to test: 1101, 111, 0001
-**--- DFA Transition Table ---**
-State          |   0   |   1   
+**Input Regular Expression:** (0|1)*01
+**Strings to test**: 1101, 111, 0001
+
+--- DFA Transition Table ---
+State          |   0     |   1   
 -----------------------------
 ->  q0         |   q1    |   q0    
     q1         |   q1    |   q2    
