@@ -37,30 +37,30 @@ The script is designed to solve the specific problems outlined in the assignment
 
 ### **Script Output**
 When executed, the script will produce the following output, solving both problems sequentially.
-**--- Solving Question 1 ---
-Input Regular Expression:** (a|b)*abb
+**--- Solving Question 1 ---**
+Input Regular Expression: (a|b)*abb
 
 --- DFA Transition Table ---
-State          |   a     |   b   
+State         |   a   |   b   
 -----------------------------
-->  q0         |   q1    |   q0    
-* q1           |   q1    |   q2    
-* q2           |   q1    |   q3    
-* q3           |   q1    |   q0    
+->  q0        |   q1    |   q0    
+* q1        |   q1    |   q2    
+* q2        |   q1    |   q3    
+* q3        |   q1    |   q0    
 
 (-> indicates start state, * indicates final state)
 
 ==================================================
 **--- Solving Question 2 ---**
-**Input Regular Expression:** (0|1)*01
-**Strings to test**: 1101, 111, 0001
+Input Regular Expression: (0|1)*01
+Strings to test: 1101, 111, 0001
 
 --- DFA Transition Table ---
-State          |   0     |   1   
+State         |   0   |   1   
 -----------------------------
-->  q0         |   q1    |   q0    
-    q1         |   q1    |   q2    
-* q2           |   q1    |   q0    
+->  q0        |   q1    |   q0    
+    q1        |   q1    |   q2    
+  * q2        |   q1    |   q0    
 
 (-> indicates start state, * indicates final state)
 
