@@ -25,46 +25,15 @@ python converter.py
 ### **Assignment Problems Solved**
 The script is designed to solve the specific problems outlined in the assignment.
 **Question 1**
-**Task:** Write a program to convert a given regular expression into its equivalent DFA.
-**Input RE:** (a/b)*abb 
-**Output:** A formatted DFA transition table.
+* **Task:** Write a program to convert a given regular expression into its equivalent DFA.
+* **Input RE:** (a/b)*abb 
+* **Output:** A formatted DFA transition table.
 
 **Question 2**
-**Task:** Write a program that converts the RE (0|1)*01 into a DFA and validates a given set of strings.
-**Input RE:** (0|1)*01 
-**Strings to test:** 1101, 111, 0001 
-**Output:** An "Accepted" / "Rejected" status for each string.
+* **Task:** Write a program that converts the RE (0|1)*01 into a DFA and validates a given set of strings.
+* **Input RE:** (0|1)*01 
+* **Strings to test:** 1101, 111, 0001 
+* **Output:** An "Accepted" / "Rejected" status for each string.
 
 ### **Script Output**
 When executed, the script will produce the following output, solving both problems sequentially.
-**--- Solving Question 1 ---**
-Input Regular Expression: (a|b)*abb
-
---- DFA Transition Table ---
-State         |   a   |   b   
------------------------------
-->  q0        |   q1    |   q0    
-* q1        |   q1    |   q2    
-* q2        |   q1    |   q3    
-* q3        |   q1    |   q0    
-
-(-> indicates start state, * indicates final state)
-
-==================================================
-**--- Solving Question 2 ---**
-Input Regular Expression: (0|1)*01
-Strings to test: 1101, 111, 0001
-
---- DFA Transition Table ---
-State         |   0   |   1   
------------------------------
-->  q0        |   q1    |   q0    
-    q1        |   q1    |   q2    
-  * q2        |   q1    |   q0    
-
-(-> indicates start state, * indicates final state)
-
-**--- Validation Results ---**
-String '1101': Accepted
-String '111': Rejected
-String '0001': Accepted
